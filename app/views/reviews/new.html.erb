@@ -1,0 +1,7 @@
+<div class="shadow p-3 mb-5 bg-white rounded">
+  <%= simple_form_for([@restaurant, @review]) do |f| %>
+    <%= f.input :rating %>
+    <%= f.input :content %>
+    <%= f.submit %>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+<div class="shadow p-3 mb-5 bg-white rounded">
+  <h1><%= @restaurant.name %></h1>
+  <p> <strong>Address: </strong><%= @restaurant.address %> </p>
+  <p> <strong>Phone number: </strong><%= @restaurant.phone_number %> </p>
+  <p> <strong>Category: </strong><%= @restaurant.category %> </p>
+</div>
+<h1>Reviews....</h1>
+<% @restaurant.reviews.each do |review| %>
+<%= review.content %>
+<% end %>
